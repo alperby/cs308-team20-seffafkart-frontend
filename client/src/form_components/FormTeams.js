@@ -3,6 +3,10 @@ import "./Form.css";
 import { Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Axios from "axios";
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import rootReducer from "./reducers/index";
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const FormTeamInsert = (e) => {
   const [teamName, SetteamName] = useState("");
