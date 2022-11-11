@@ -30,6 +30,13 @@
   background-size: cover;
   background-color: #cccc;
 }
+
+.form-background-team {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 /*margin: 100px auto;
 grid-template-columns: 1fr 1fr;*/
 .form-container {
