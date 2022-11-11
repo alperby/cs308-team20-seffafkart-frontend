@@ -1,12 +1,12 @@
-
-import './App.css';
-import Navbar from './components/Navbar';
-import Sign_up from './Pages/Sign_up';
-import Login from './Pages/Login';
-import Home from './Pages/Home';
-import Profile from './Pages/Profile';
-import { Route, Routes} from 'react-router-dom';
-import {useState} from 'react';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Sign_up from "./Pages/Sign_up";
+import Login from "./Pages/Login";
+import Home from "./Pages/Home";
+import Profile from "./Pages/Profile";
+import Teams from "./Pages/Teams";
+import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
   // const adminUser = {
@@ -36,18 +36,18 @@ function App() {
   //   setUser({username:"",email:""});
   // }
 
-
- return (
+  return (
     <>
       <Navbar />
-      <div className='container'>
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/sign-up' element={<Sign_up />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/profile' element={<Profile />}/>
-      </Routes>
-      </div>   
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sign-up" element={<Sign_up />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/team" element={<Teams />} />
+        </Routes>
+      </div>
     </>
   );
 }
